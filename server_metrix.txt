@@ -1,0 +1,40 @@
+                        Server Metrics
+------------------------------------------------------------------------------
+Server                      | CPU Details (us) | Comp Memory % | Disk Usage %
+----------------------------|------------------|---------------|---------------
+172.16.1.215(JAVA)          | 1                | 35.87         | 87%
+172.16.1.214(JAVA)          | 5                | 37.90         | 88%
+172.16.1.18(UXP)            | 49               | 39.77         | 77%
+172.16.1.17(UXP)            | 53               | 63.13         | 57%
+172.16.1.75(Mobile APP)     | 6                | 28.50         | 84%
+172.16.1.76(Mobile APP)     | 8                | 28.70         | 83%
+172.16.50.18(UXP)           | 71               | 57.11         | 70%
+172.16.50.17(UXP)           | 36               | 58.69         | 71%
+172.16.1.192(ESB)           | 7                | 60.68         | 75%
+172.16.1.191(ESB)           | 15               | 75.33         | 75%
+
+                        Login Count
+------------------------------------------------
+Server                      | Login Count
+----------------------------|-------------
+172.16.1.75(Mobile APP)     | 3028
+172.16.1.76(Mobile APP)     | 3109
+
+                        Thread Count
+------------------------------------------------
+Main Server     Managed Server      Active Thread Count
+------------------------------------------------
+Main Server     Managed Server       Active Thread Count
+172.16.1.18     server1_omniuxpwas2dc1 0
+172.16.1.18     server2_omniuxpwas2dc1 31
+172.16.1.17     server1_omniuxpwas1dc1 1
+172.16.1.17     server2_omniuxpwas1dc1 3
+172.16.50.18    server1_omniuxpwas2dc2 3
+172.16.50.18    server2_omniuxpwas2dc2 24
+172.16.50.17    server1_omniuxpwas1dc2 6
+172.16.50.17    server2_omniuxpwas1dc2 2
+172.16.1.214    server1_omnibswas1dc1 1
+172.16.1.215    server1_omnibswas2dc1 2
+
+172.16.1.75                            173
+172.16.1.76                            155

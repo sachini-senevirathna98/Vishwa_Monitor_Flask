@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server Metrics</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Server Metrics</h1>
+    <h2>Server Metrics</h2>
+    <table>
+        <tr>
+            <th>Server</th>
+            <th>CPU Details (us)</th>
+            <th>Comp Memory %</th>
+            <th>Disk Usage %</th>
+        </tr>
+        {% for line in metrics['Server Metrics'] %}
+        <tr>
+            {% for item in line.split() %}
+            <td>{{ item }}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+
+    <h2>Login Count</h2>
+    <table>
+        <tr>
+            <th>Server</th>
+            <th>Login Count</th>
+        </tr>
+        {% for line in metrics['Login Count'] %}
+        <tr>
+            {% for item in line.split() %}
+            <td>{{ item }}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+
+    <h2>Thread Count</h2>
+    <table>
+        <tr>
+            <th>Main Server</th>
+            <th>Managed Server</th>
+            <th>Active Thread Count</th>
+        </tr>
+        {% for line in metrics['Thread Count'] %}
+        <tr>
+            {% for item in line.split() %}
+            <td>{{ item }}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
